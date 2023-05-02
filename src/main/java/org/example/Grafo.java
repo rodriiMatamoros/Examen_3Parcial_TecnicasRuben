@@ -1,6 +1,5 @@
 package org.example;
 import java.util.*;
-import java.util.*;
 
 public class Grafo {
     private Map<String, List<Arco>> mapa;
@@ -95,14 +94,13 @@ public class Grafo {
         }
     }
 
-
-        public static void main() {
+        public static void Main() {
             Scanner sc = new Scanner(System.in);
             Grafo grafo = new Grafo();
             // Agregar puerto de origen
             grafo.agregarPuerto("Puerto Madero");
             // Pedir al usuario que ingrese 6 puertos
-            System.out.println("Ingrese 5 puertos (no incluyendo Puerto Madero ni Puerto Rodas):");
+            System.out.println("Ingrese 5 puertos (NO incluya Puerto Madero ni Puerto Rodas):");
             for (int i = 0; i < 5; i++) {
                 String puerto = sc.nextLine();
                 grafo.agregarPuerto(puerto);
@@ -116,8 +114,6 @@ public class Grafo {
                     }
                 }
             }
-
-
             // Mostrar el resultado de las cuatro tareas mencionadas
             System.out.print("Barrido en profundidad: ");
             grafo.barridoEnProfundidad("Puerto Madero");
@@ -139,6 +135,5 @@ public class Grafo {
                 System.out.println();
             }
         }
-
 }
 
