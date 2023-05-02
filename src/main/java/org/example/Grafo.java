@@ -95,8 +95,8 @@ public class Grafo {
         }
     }
 
-    public static class Main {
-        public static void main(String[] args) {
+
+        public static void main() {
             Scanner sc = new Scanner(System.in);
             Grafo grafo = new Grafo();
             // Agregar puerto de origen
@@ -139,7 +139,6 @@ public class Grafo {
                 System.out.println();
             }
         }
-    }
 
 }
 
